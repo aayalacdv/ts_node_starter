@@ -8,6 +8,7 @@ const host : string = config.get("host") as string;
 const port : number = config.get("port") as number; 
 
 const app = express(); 
+
 app.use(cors()); 
 app.use( express.json()); 
 app.use( express.urlencoded({ extended: false})); 
