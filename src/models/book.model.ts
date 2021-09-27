@@ -8,6 +8,7 @@ export interface IBook extends Document {
   price: number;
 }
 
+
 //Cremaos un schema y lo asignamos al tipo de la interfaz anterior
 const bookSchema = new Schema<IBook>(
   {
@@ -19,6 +20,7 @@ const bookSchema = new Schema<IBook>(
 //podemos pasar otro objeto de manera opcional con otras propiedades que pone la librería
   { timestamps: true }
 );
+
 
 // definimos un modelo que es lo que usaremos para hacer queries a la base de datos y lo que tendrá toddas las propiedades definidas antes. 
 const Book = mongoose.model('Book',bookSchema); 

@@ -1,6 +1,6 @@
 import config from 'config'; 
 import express from 'express'; 
-import routes from '../routes';
+import routes from '../routes/routes';
 import connect from './connection/connect';
 
 const host : string = config.get("host") as string; 
