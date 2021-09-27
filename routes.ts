@@ -7,4 +7,12 @@ export default function routes (app : Express){
     app.get('/', (req: Request, res: Response ) => {
         res.status(200).send({message : "Hello"}); 
     })
+
+    //GET METHOD 
+
+    //POST METHOD
+
+    //PUTH METHOD 
+
+    //DELETE METHOD 
 }
